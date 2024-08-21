@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <style>
+         body {
+            margin: 0;
+            padding: 0;
+            background-image: url("bg1.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1000px; 
+            margin: 0 auto;
+        }
+        .container h1 {
+            color: orangered;
+            cursor: pointer;
+            margin: 0;
+        }
+        .navbar ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .navbar ul li {
+            display: inline-block;
+            padding: 18px;
+            text-transform: uppercase;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 4px;
+        }
+        .navbar ul li a:hover {
+            background-color: orangered;
+        }
+        .div {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .div .first,
+        .div .second,
+        .div .third {
+            width: calc(33.33% - 40px);
+            margin-bottom: 20px;
+            padding: 15px;
+            box-sizing: border-box;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        figcaption {
+            margin: 0;
+        }
+        @keyframes slideFromBelow {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes slideFromAbove {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .first {
+            animation-name: slideFromBelow;
+            background-color:  #FFB6C1;
+
+        }
+        .second {
+            animation-name: slideFromAbove;
+            background-color: #87CEEB;
+        }
+        .third {
+            animation-name: slideFromBelow;
+            background-color: #FFD700;
+        }
+        @media (max-width: 768px) {
+            .div .first,
+            .div .second,
+            .div .third {
+                width: calc(50% - 30px);
+            }
+        }
+        @media (max-width: 480px) {
+            .div .first,
+            .div .second,
+            .div .third {
+                width: 100%; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rich Cuisine</h1>
+        <div class="navbar">
+            <ul>
+                <li><a href="index1.html">HOME</a></li>
+                <li><a href="div.html">MENU</a></li>
+                <li><a href="team.html">team</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="div">
+        <div class="first">
+            <a href="veg.html">
+            <figure>
+                <img src="v2.jpeg" alt="Veg Heaven">
+                <figcaption>
+                    <h2>Veg Heaven</h2>
+                    <p>Join the veggie revolution and let your plate be a canvas of vibrant flavors and plant-powered passion!</p>
+                </figcaption>
+            </figure>
+            </a>
+        </div>
+        <div class="second">
+            <a href="nonveg.html">
+            <figure>
+                <img src="nonveg.jpeg" alt="Non-Veg Delights">
+                <figcaption>
+                    <h2>Non-Veg Delights</h2>
+                    <p>Indulge in the decadent delights of the meat lover's paradise. From tender steaks to succulent ribs, every bite is a celebration of carnivorous cravings.</p>
+                    
+                </figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="third">
+            <a href="vegan.html">
+            <figure>
+                <img src="vegan.jpeg" alt="Vegan Paradise">
+                <figcaption>
+                    <h2>Vegan Paradise</h2>
+                    <p>Join the plant-powered party! Veganism isn't just a diet, it's a delicious revolution for a better world."</p>
+                </figcaption>
+            </figure>
+         </a> 
+        </div>
+    </div>
+</body>
+</html>

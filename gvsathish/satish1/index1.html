@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("foods.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .container h1{
+            color: orangered;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .navbar ul li{
+            display: inline-block;
+            padding: 18px;
+            text-transform: uppercase;
+        }
+        .navbar ul li a{
+              text-decoration: none;
+              color: #fff;
+              padding: 4px;
+              
+        }
+        .navbar ul li a:hover{
+            background-color: orangered;
+        }
+        .content{
+            position: absolute;
+            color: #fff;
+            top: 40%;
+            left: 30%;
+        }
+        .content h3{
+            font-family: sans-serif;
+            font-size: 20px;
+            margin-left: 30%;
+        }
+        .content h1{
+            font-size: 50px;
+        }
+        .content p{
+            text-align: center;
+            margin-top: 17px;
+            font-size: 30%;
+        }
+        .search{
+            position: absolute;
+            margin-top: 25%;
+            margin-left: 42%;
+        }
+        .search input{
+            outline: none;
+            border: none;
+            padding: 12px 40px;
+            size: 1em;
+            width: 100%;
+        }
+        .content a{
+            margin-left: 30%;
+            font-size: larger;
+            font-weight: 50%;
+            text-decoration: none;
+            color: white;
+            
+        }
+        .content a:hover{
+            background-color: orangered;
+        }
+        .submit{
+            position: absolute;
+            margin-top: 31%;
+            margin-left: 49%;
+
+        }
+        .submit a{
+            text-decoration: none;
+            color: #fff;
+            padding: 12px 25px;
+        }
+        #login{
+            margin-left: 50%;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rich Cuisine</h1>
+        <div class="navbar">
+            <ul>
+                <li><a href="index1.html">HOME</a></li>
+                <li><a href="div.html">MENU</a></li>
+                <li><a href="team.html">team</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <h3>Welcome to rich Cuisine</h3>
+        <h1>Rich Healty And Natural Food</h1>       
+        <q>Life is uncertain. Eat dessert first.</q>
+        <br><br>
+        <a >let's enter the world of sinful eating</a><br><br><br>
+     </div>     
+</body>
+</html>

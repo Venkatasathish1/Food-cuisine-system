@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes</title>
+  <style>
+    body{
+      background-color: rgb(91, 191, 107);
+      opacity: 20px;
+    }
+    .recipe {
+      width: 30%;
+      height: 30%;
+      margin: 0 1.5%;
+      float: left;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      margin-top: 10%;
+      overflow: hidden;
+      position: relative;
+      opacity: 0;
+      animation: slideIn 0.5s ease forwards;
+      background-color: white;
+    }
+
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-100%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .recipe img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .recipe:nth-child(2) {
+      animation-delay: 0.5s;
+    }
+
+    .recipe:nth-child(3) {
+      animation-delay: 1s;
+    }
+
+    .recipe h1 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .recipe h2 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .recipe ul {
+      margin-bottom: 15px;
+    }
+
+    .recipe ol {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="recipe">
+    <h1>Greek Yogurt Parfait</h1>
+    <a href="vegan1.html"><img src="yogurt.jpeg"></a>
+  </div>
+  <div class="recipe">
+    <h1>Vegan Chocolate Avocado Mousse</h1>
+    <a href="vegan2.html"><img src="choco.jpeg"></a>
+   </div>
+   <div class="recipe">
+    <h1>Peanut Butter Banana Smoothie </h1>
+    <a href="vegan3.html"><img src="smoothie.jpeg"></a>
+   </div>
+   <div class="recipe">
+    <h1>lentel soup </h1>
+    <a href="vegan4.html"><img src="lentil.jpeg"></a>
+   </div>
+   <div class="recipe">
+    <h1>Vegan Pad Thai  </h1>
+    <a href="vegan5.html"><img src="thai.jpeg"></a>
+   </div>
+   <div class="recipe">
+    <h1>Vegan Tacos   </h1>
+    <a href="vegan6.html"><img src="tacos.jpeg"></a>
+   </div>
+</body>
+</html>
